@@ -11,7 +11,7 @@ Package.describe({
 Package.onUse(function (api) {
 	api.use('cfs:collection', 'client');
 	api.use('urigo:angular', 'client');
-	api.versionsFrom('1.1.0.2');
+	api.versionsFrom('1.1.0.2'); // Not tested with earlier versions.
 	api.addFiles('cfs-image.js', 'client');
 });
 
