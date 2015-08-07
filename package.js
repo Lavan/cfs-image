@@ -1,6 +1,6 @@
 Package.describe({
 	name: 'lavan:cfs-image',
-	version: '0.0.1',
+	version: '0.0.2',
 	// Brief, one-line summary of the package.
 	summary: 'Angular directive to easily show images stored in a Collection FS collection.',
 	// URL to the Git repository containing the source code for this package.
@@ -9,8 +9,8 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-	api.use('cfs:collection', 'client');
-	api.use('urigo:angular', 'client');
+	api.use('cfs:collection@0.5.5', 'client');
+	api.use('urigo:angular@0.8.0', 'client');
 	api.versionsFrom('1.1.0.2'); // Not tested with earlier versions.
 	api.addFiles('cfs-image.js', 'client');
 });
