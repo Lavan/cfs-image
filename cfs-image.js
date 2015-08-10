@@ -47,7 +47,8 @@ angular.module('lavan-cfs-image', ['angular-meteor'])
 		return {
 			scope: {
 				imageId: '=',
-				store: '@'
+				store: '@',
+				collection: '@'
 			},
 			restrict: 'E',
 			replace: true,
@@ -92,7 +93,8 @@ angular.module('lavan-cfs-image', ['angular-meteor'])
 				cfsStore: '@',
 				cfsPosition: '@',
 				cfsSize: '@',
-				cfsRepeat: '@'
+				cfsRepeat: '@',
+				cfsCollection: '@'
 			},
 			restrict: 'A',
 			controller: 'CfsBackgroundController',
